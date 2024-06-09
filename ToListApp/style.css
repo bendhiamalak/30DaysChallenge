@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+
+} 
+
+body{
+    
+
+    background: linear-gradient(to right,#1a013fe8,#2b5594);
+ 
+    
+}
+
+.card{
+    max-width: 540px;
+    width: 100%;
+    background-color: aliceblue;
+    
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px ;
+    border-radius: 10px;
+    
+}
+
+.title{
+    display: flex;
+    
+}
+
+.title h2 img{
+    height: 50px;
+    width: 50px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    
+}
+
+.title h2{
+    color: darkblue;
+    font-weight:bolder;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+}
+
+input{
+    margin: 0px ;
+    width: 75%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: rgb(198, 219, 219);
+    border:none;
+    font-size: medium;
+    flex:1;
+    padding:10px
+}
+
+button{
+    width: 20%;
+    height:45px ;
+    background-color: chocolate;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight:bold;
+    
+    
+}
+
+ul{
+    padding-top: 10px;
+}
+ul li{
+    list-style-type:none;
+    padding:10px 10px 10px 50px;
+    cursor:pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    left: 10px;
+    top: 10%;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked{
+   color: #555;
+   text-decoration: line-through; 
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 28px;
+    height:28px;
+    font-size: 22px;
+    color:#555;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
